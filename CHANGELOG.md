@@ -2,7 +2,11 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/).
 
-## [1.0.0-preview.1] - 2026-11-20
+## [1.0.0-preview.1] - 2026-11-20 (installer added the same day)
+
+### Installer
+- Added `AudioDimension_Setup.exe` (Inno Setup 6): per-user install, Start Menu and optional desktop shortcut, uninstaller, bundled runtime and FFmpeg. Uninstall keeps user data unless you ask to delete it, and silent uninstalls never delete it (a test caught an early version that did).
+
 
 First public preview. Built in stages; stages 1 to 7 are complete and tested, stages 8 (polish and optimization) and 9 (installer and release verification) are only partly done.
 
@@ -17,6 +21,6 @@ First public preview. Built in stages; stages 1 to 7 are complete and tested, st
 - 360 automated tests, documentation for the preset and project formats, manual test checklist.
 
 ### Known limitations
-- No installer yet (portable ZIP provided); Windows only.
+- Windows only; installer tested on the development machine only.
 - Anti-aliasing and VSync settings are not functional; video backgrounds are not implemented.
 - Tested on one machine (RTX 4060); low-end (2 GB VRAM) hardware not verified; memory soak testing not done.

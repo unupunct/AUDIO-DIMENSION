@@ -1,5 +1,5 @@
 ; Inno Setup script for Audio Dimension.
-; STATUS: written but NOT yet built or tested on a clean machine (Inno Setup was not installed when this was published).
+; Built with Inno Setup 6.7. Tested: silent install, launch with bundled FFmpeg, shortcuts, uninstall keeps user data.
 ; Build:  1) dotnet publish src/AudioDimension.App -c Release -r win-x64 --self-contained true -o publish/AudioDimension
 ;         2) "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer\AudioDimension.iss
 #define AppName "Audio Dimension"
@@ -57,7 +57,8 @@ procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
 var
   DataDir: string;
 begin
-  if CurUninstallStep = usPostUninstall then
+  // Never delete user data during a silent uninstall (winget, IT tools): there is nobody to confirm it.
+  if (CurUninstallStep = usPostUninstall) and (not UninstallSilent()) then
   begin
     DataDir := ExpandConstant('{localappdata}\AudioDimension');
     if DirExists(DataDir) then

@@ -40,10 +40,12 @@ The 10 title templates:
 
 Windows 10 or 11 (x64). No .NET or FFmpeg install is needed.
 
-1. Download **`AudioDimension-1.0.0-preview.1-win-x64-portable.zip`** from the [latest release](../../releases/latest).
-2. Extract it anywhere and run **`AudioDimension.exe`**.
+From the [latest release](../../releases/latest) pick one:
 
-A Windows installer (Inno Setup script in [`installer/`](installer)) is not built yet; see [Known limitations](#known-limitations).
+- **`AudioDimension_Setup.exe`** (installer, 100 MB): installs per user (no admin rights needed) with a Start Menu entry, an optional desktop shortcut and an uninstaller. Uninstalling keeps your projects, presets and exports unless you choose to delete them (silent/unattended uninstalls never delete them).
+- **`AudioDimension-1.0.0-preview.1-win-x64-portable.zip`** (146 MB): extract anywhere and run `AudioDimension.exe`. Nothing is written outside your user data folder.
+
+Both are not code-signed, so Windows SmartScreen may show a warning on first run ("More info" > "Run anyway").
 
 **macOS / Linux are not supported.** The app is built on Windows-only technology (WPF, WASAPI). A Mac version would need a separate port.
 
@@ -67,13 +69,14 @@ All of the following is covered by automated tests (360 at the time of writing) 
 ## Known limitations
 This is an honest list of what is **not** done yet:
 
-- **No installer yet.** A portable ZIP is provided; the Inno Setup script is in the repo but has not been built or tested on a clean machine.
+- **The installer has been tested** (silent install, launch with bundled FFmpeg, shortcuts, uninstall keeping user data) on the development machine only, not yet on a separate clean PC.
 - **Polish and optimization is unfinished.** Frame times are good on the development GPU (all visualizers under 4 ms/frame at 1080p on an RTX 4060), but the **2 GB VRAM scenario has not been tested** on real hardware, and the memory-leak soak tests are not done.
 - Some **Settings do not do anything yet**: *Anti-aliasing* and *VSync*. Preview frames are presented in sync by the Windows compositor.
 - **Video backgrounds** are not implemented (picture backgrounds are).
 - Presets are checked with synthetic audio in the automated tests; real music will look different.
 - The Windows file Open/Save dialogs were not driven by automated tests.
 - No code signing: Windows SmartScreen may warn on first run.
+- No macOS build yet (Windows only).
 
 ## Build from source
 Requirements: Windows 10/11, the [.NET 10 SDK](https://dotnet.microsoft.com/download), a GPU with OpenGL 3.3.
