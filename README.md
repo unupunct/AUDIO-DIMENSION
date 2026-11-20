@@ -47,7 +47,10 @@ From the [latest release](../../releases/latest) pick one:
 
 Both are not code-signed, so Windows SmartScreen may show a warning on first run ("More info" > "Run anyway").
 
-**macOS / Linux are not supported.** The app is built on Windows-only technology (WPF, WASAPI). A Mac version would need a separate port.
+### macOS (preview)
+**`AudioDimension-1.0.0-preview.1-macOS-x86_64.dmg`** (2 MB): a separate native Mac app (Swift, Metal, Core Audio) for macOS 12 Monterey or newer. It is an early port: **14 visualizers and 25 of the 60 presets**, live microphone or input-device capture, custom presets, and MP4 export. Text/titles and projects are not in the Mac version yet. Intel build (runs on Apple Silicon through Rosetta 2); not notarized, so right-click the app and choose **Open** the first time. System audio needs a virtual driver such as BlackHole. Details and limits: [docs/MACOS.md](docs/MACOS.md).
+
+Linux is not supported.
 
 ### First run
 1. Open **Visualizer Studio**, pick a source (microphone or system audio) and press **Play**. The red pill at the top shows whenever audio is being captured; nothing is captured otherwise.
@@ -76,7 +79,7 @@ This is an honest list of what is **not** done yet:
 - Presets are checked with synthetic audio in the automated tests; real music will look different.
 - The Windows file Open/Save dialogs were not driven by automated tests.
 - No code signing: Windows SmartScreen may warn on first run.
-- No macOS build yet (Windows only).
+- **macOS version is a smaller preview:** 14 of 35 visualizers, 25 of 60 presets, no text/titles or projects yet, Intel build only, not notarized. Its analysis, rendering and export are covered by 54 automated tests run on a Monterey MacBook Air, but the live microphone path and the on-screen windows were not tested by a person.
 
 ## Build from source
 Requirements: Windows 10/11, the [.NET 10 SDK](https://dotnet.microsoft.com/download), a GPU with OpenGL 3.3.
@@ -112,6 +115,7 @@ dotnet publish src/AudioDimension.App -c Release -r win-x64 --self-contained tru
 - [Preset schema](docs/PRESET_SCHEMA.md)
 - [Project format](docs/PROJECT_FORMAT.md)
 - [Manual test checklist](docs/MANUAL_TEST_CHECKLIST.md)
+- [macOS version](docs/MACOS.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md) (includes the FFmpeg GPL notice)
 - [Changelog](CHANGELOG.md)
 

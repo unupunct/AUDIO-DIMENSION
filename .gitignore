@@ -6,3 +6,6 @@ release/
 third_party/ffmpeg/bin/
 publish/
 *.pdb
+
+mac/build/
+build-shot.png

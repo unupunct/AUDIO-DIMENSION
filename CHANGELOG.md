@@ -9,6 +9,10 @@ First public preview. Built in stages; stages 1 to 7 are complete and tested, st
 ### Installer
 - Added `AudioDimension_Setup.exe` (Inno Setup 6): per-user install, Start Menu and optional desktop shortcut, uninstaller, bundled runtime and FFmpeg. Uninstall keeps user data unless you ask to delete it, and silent uninstalls never delete it (a test caught an early version that did).
 
+### macOS preview (added later the same day)
+- New native Mac app in `mac/` (Swift, SwiftUI, Metal, Core Audio, AVFoundation) for macOS 12+: 14 visualizers, 25 presets, live input capture, inspector, custom presets, recording and MP4 export. 54 automated tests.
+- Built-in presets are now also exported as JSON (`tools/PresetDump`) so both apps share the same data.
+
 ### Added
 - **Foundation:** WPF shell with dark theme, SQLite storage, Serilog logging, settings, collapsible inspector, DPI-aware UI scaling.
 - **Audio:** microphone and WASAPI loopback capture, FFT with six frequency bands, level and peak meters, noise gate, automatic gain, beat detection, device-loss recovery, clear error messages, optional monitoring.

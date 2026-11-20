@@ -1,0 +1,7131 @@
+{
+  "format": "AudioDimension.Presets",
+  "schemaVersion": 1,
+  "presets": [
+    {
+      "schemaVersion": 1,
+      "id": "neon-pulse",
+      "name": "Neon Pulse",
+      "category": "Neon \u0026 Cyberpunk",
+      "description": "A ring of neon bars that kicks on every bass hit.",
+      "author": "Audio Dimension",
+      "tags": [
+        "neon \u0026 cyberpunk",
+        "circular spectrum"
+      ],
+      "visualizerId": "circular-spectrum",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.2,
+          "scale": 1,
+          "lineWidth": 3.5,
+          "particleDensity": 1,
+          "glow": 1.3,
+          "segments": 96,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FF2BD6",
+            "#00F0FF",
+            "#7C4DFF",
+            "#FFEE58"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#07030F",
+          "color2": "#1B0630",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.3,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": true,
+          "chromaticAmount": 0.008,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1.3,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "rotation"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.7999942Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "cyber-grid",
+      "name": "Cyber Grid",
+      "category": "Neon \u0026 Cyberpunk",
+      "description": "A neon grid racing toward a striped sun; bass swells the sun.",
+      "author": "Audio Dimension",
+      "tags": [
+        "neon \u0026 cyberpunk",
+        "cyber grid"
+      ],
+      "visualizerId": "cyber-grid",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00F0FF",
+            "#FF2BD6",
+            "#7C4DFF",
+            "#FFD54F"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 9,
+          "distance": 7,
+          "fov": 65,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#05010F",
+          "color2": "#240A3C",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": true,
+          "scanlineAmount": 0.15,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.808466Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "digital-storm",
+      "name": "Digital Storm",
+      "category": "Neon \u0026 Cyberpunk",
+      "description": "A diagonal storm of data streams with lightning bolts on the beat.",
+      "author": "Audio Dimension",
+      "tags": [
+        "neon \u0026 cyberpunk",
+        "digital rain"
+      ],
+      "visualizerId": "digital-rain",
+      "visual": {
+        "params": {
+          "speed": 1.3,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.7,
+          "segments": 90,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00FF9C",
+            "#00B8FF",
+            "#B388FF",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#02060A",
+          "color2": "#02060A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": true,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": true,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": true,
+          "noiseAmount": 0.04,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.4,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1.3,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8090062Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "synthwave-tunnel",
+      "name": "Synthwave Tunnel",
+      "category": "Neon \u0026 Cyberpunk",
+      "description": "Square frames rush past in a retro sunset tunnel.",
+      "author": "Audio Dimension",
+      "tags": [
+        "neon \u0026 cyberpunk",
+        "geometric tunnel"
+      ],
+      "visualizerId": "geometric-tunnel",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3.5,
+          "particleDensity": 1,
+          "glow": 1.2,
+          "segments": 4,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FF3CAC",
+            "#784BA0",
+            "#2B86C5",
+            "#FFD166"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 0,
+          "distance": 1.5,
+          "fov": 80,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "AnimatedGradient",
+          "color1": "#12002B",
+          "color2": "#3A0CA3",
+          "animationSpeed": 0.4,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.4,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": true,
+          "scanlineAmount": 0.25,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1.3,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8093356Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "electric-horizon",
+      "name": "Electric Horizon",
+      "category": "Neon \u0026 Cyberpunk",
+      "description": "Neon terrain rises on both sides of the road, shaped by the spectrum.",
+      "author": "Audio Dimension",
+      "tags": [
+        "neon \u0026 cyberpunk",
+        "cyber grid"
+      ],
+      "visualizerId": "cyber-grid",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFB703",
+            "#FB5607",
+            "#FF006E",
+            "#8338EC"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 12,
+          "distance": 7,
+          "fov": 65,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#12002B",
+          "color2": "#3A0CA3",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": true,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.55,
+        "bassSensitivity": 1.1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1.2,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8096182Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "neon-reactor",
+      "name": "Neon Reactor",
+      "category": "Neon \u0026 Cyberpunk",
+      "description": "Six band rings spin around a core and shockwaves fire on every beat.",
+      "author": "Audio Dimension",
+      "tags": [
+        "neon \u0026 cyberpunk",
+        "audio-reactive rings"
+      ],
+      "visualizerId": "reactive-rings",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3.2,
+          "particleDensity": 1,
+          "glow": 1.3,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00FFC6",
+            "#00A3FF",
+            "#FF2E88",
+            "#FFE600"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#04040A",
+          "color2": "#04040A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.4,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": true,
+          "chromaticAmount": 0.01,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.45,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8099845Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "cyber-rain",
+      "name": "Cyber Rain",
+      "category": "Neon \u0026 Cyberpunk",
+      "description": "Green-cyan code rain; each column falls faster when its frequency is active.",
+      "author": "Audio Dimension",
+      "tags": [
+        "neon \u0026 cyberpunk",
+        "digital rain"
+      ],
+      "visualizerId": "digital-rain",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 2.5,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 96,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00FF66",
+            "#00D1FF",
+            "#B0FFE0",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#000A05",
+          "color2": "#001F14",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1.2,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8101115Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "laser-geometry",
+      "name": "Laser Geometry",
+      "category": "Neon \u0026 Cyberpunk",
+      "description": "Razor-thin laser wireframes nested inside each other.",
+      "author": "Audio Dimension",
+      "tags": [
+        "neon \u0026 cyberpunk",
+        "rotating geometric structures"
+      ],
+      "visualizerId": "rotating-geometry",
+      "visual": {
+        "params": {
+          "speed": 1.1,
+          "reactivity": 1.2,
+          "scale": 1,
+          "lineWidth": 3.5,
+          "particleDensity": 1,
+          "glow": 1.5,
+          "segments": 4,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FF0055",
+            "#00FFEA",
+            "#FFE600",
+            "#7C4DFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 15,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#03030A",
+          "color2": "#03030A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.6,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": true,
+          "lightRaysAmount": 0.6
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.4,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1.2,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8101309Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "cosmic-galaxy",
+      "name": "Cosmic Galaxy",
+      "category": "Space \u0026 Cosmos",
+      "description": "A spiral galaxy; each radius glows with its own frequency.",
+      "author": "Audio Dimension",
+      "tags": [
+        "space \u0026 cosmos",
+        "particle galaxy"
+      ],
+      "visualizerId": "particle-galaxy",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.2,
+          "glow": 1,
+          "segments": 3,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFD9A0",
+            "#FF8FB1",
+            "#8F7CFF",
+            "#3EC6FF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 38,
+          "distance": 11,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Starfield",
+          "color1": "#02030A",
+          "color2": "#0A0620",
+          "animationSpeed": 0.15,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.65,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera",
+        "rotation"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8103673Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "black-hole",
+      "name": "Black Hole",
+      "category": "Space \u0026 Cosmos",
+      "description": "Matter spirals into an event horizon; louder music speeds the infall.",
+      "author": "Audio Dimension",
+      "tags": [
+        "space \u0026 cosmos",
+        "vortex"
+      ],
+      "visualizerId": "vortex",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1.1,
+          "lineWidth": 3,
+          "particleDensity": 1.2,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFB347",
+            "#FF6A3D",
+            "#C0362C",
+            "#3A0CA3"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 26,
+          "distance": 7,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 3,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Starfield",
+          "color1": "#010102",
+          "color2": "#0A0414",
+          "animationSpeed": 0.1,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.3,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.6,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": true,
+          "distortionAmount": 0.06,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.6,
+        "bassSensitivity": 1.3,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8105881Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "solar-explosion",
+      "name": "Solar Explosion",
+      "category": "Space \u0026 Cosmos",
+      "description": "A star hurls plasma loops into space on each beat.",
+      "author": "Audio Dimension",
+      "tags": [
+        "space \u0026 cosmos",
+        "solar flare"
+      ],
+      "visualizerId": "solar-flare",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.2,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.3,
+          "glow": 1.2,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFF3B0",
+            "#FFB703",
+            "#FB5607",
+            "#9D0208"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 12,
+          "distance": 11,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 4,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#050000",
+          "color2": "#1A0500",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.8,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.6,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": true,
+          "motionBlurAmount": 0.5,
+          "lightRays": true,
+          "lightRaysAmount": 0.8
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1.4,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8109861Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "nebula-drift",
+      "name": "Nebula Drift",
+      "category": "Space \u0026 Cosmos",
+      "description": "Slow glowing nebula clouds that billow with the music.",
+      "author": "Audio Dimension",
+      "tags": [
+        "space \u0026 cosmos",
+        "fluid field"
+      ],
+      "visualizerId": "fluid-field",
+      "visual": {
+        "params": {
+          "speed": 0.8,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#7B2FF7",
+            "#F107A3",
+            "#00C2FF",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000000",
+          "color2": "#000000",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.75,
+        "bassSensitivity": 1.1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8113257Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "starfield-journey",
+      "name": "Starfield Journey",
+      "category": "Space \u0026 Cosmos",
+      "description": "Cruise through a star field; volume is your throttle.",
+      "author": "Audio Dimension",
+      "tags": [
+        "space \u0026 cosmos",
+        "starfield"
+      ],
+      "visualizerId": "starfield",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#BFE9FF",
+            "#8FB8FF",
+            "#C7A6FF",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 0,
+          "distance": 1.5,
+          "fov": 75,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#000308",
+          "color2": "#050B22",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.9,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1.1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1.2,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8113921Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "quantum-particles",
+      "name": "Quantum Particles",
+      "category": "Space \u0026 Cosmos",
+      "description": "A shimmering shell of particles that ripples with every band.",
+      "author": "Audio Dimension",
+      "tags": [
+        "space \u0026 cosmos",
+        "reactive particle sphere"
+      ],
+      "visualizerId": "reactive-sphere",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.2,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00E5FF",
+            "#7C4DFF",
+            "#FF4081",
+            "#B2FF59"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 15,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#02020A",
+          "color2": "#150A30",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": true,
+          "chromaticAmount": 0.006,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.55,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1.2,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera",
+        "rotation"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8116667Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "cosmic-rings",
+      "name": "Cosmic Rings",
+      "category": "Space \u0026 Cosmos",
+      "description": "A planet with a sparkling ring in a living nebula sky.",
+      "author": "Audio Dimension",
+      "tags": [
+        "space \u0026 cosmos",
+        "audio-reactive space"
+      ],
+      "visualizerId": "space-environment",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#7DF9FF",
+            "#B388FF",
+            "#FF8FAB",
+            "#FFE0A3"
+          ]
+        },
+        "camera": {
+          "yaw": 20,
+          "pitch": 14,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 3,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000000",
+          "color2": "#000000",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.65,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8119676Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "deep-space",
+      "name": "Deep Space",
+      "category": "Space \u0026 Cosmos",
+      "description": "A calm flight down an endless tube of cold blue particles.",
+      "author": "Audio Dimension",
+      "tags": [
+        "space \u0026 cosmos",
+        "particle tunnel"
+      ],
+      "visualizerId": "particle-tunnel",
+      "visual": {
+        "params": {
+          "speed": 0.8,
+          "reactivity": 0.9,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.4,
+          "glow": 1.8,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#1E90FF",
+            "#6A5ACD",
+            "#00CED1",
+            "#E0FFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 0,
+          "distance": 1.5,
+          "fov": 80,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#00020A",
+          "color2": "#02133A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.6,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 0.9,
+        "smoothing": 0.7,
+        "bassSensitivity": 1.1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8121653Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "crystal-sphere",
+      "name": "Crystal Sphere",
+      "category": "Geometric",
+      "description": "A faceted crystal whose spikes grow with the spectrum.",
+      "author": "Audio Dimension",
+      "tags": [
+        "geometric",
+        "crystal core"
+      ],
+      "visualizerId": "crystal-core",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#7DF9FF",
+            "#B388FF",
+            "#FF9AD5",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 14,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 8,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#05050F",
+          "color2": "#1A1038",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.9,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.6,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8123658Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fractal-motion",
+      "name": "Fractal Motion",
+      "category": "Geometric",
+      "description": "A Julia set that morphs as bass bends its constant.",
+      "author": "Audio Dimension",
+      "tags": [
+        "geometric",
+        "fractal"
+      ],
+      "visualizerId": "fractal",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00F5D4",
+            "#00BBF9",
+            "#9B5DE5",
+            "#F15BB5"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000000",
+          "color2": "#000000",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.8,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.4,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.65,
+        "bassSensitivity": 1.3,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8125546Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "geometric-collapse",
+      "name": "Geometric Collapse",
+      "category": "Geometric",
+      "description": "Cubes implode toward the centre then burst outward on every beat.",
+      "author": "Audio Dimension",
+      "tags": [
+        "geometric",
+        "cube field"
+      ],
+      "visualizerId": "cube-field",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.2,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 5,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FF6B6B",
+            "#FFD93D",
+            "#6BCB77",
+            "#4D96FF"
+          ]
+        },
+        "camera": {
+          "yaw": 30,
+          "pitch": 24,
+          "distance": 14,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 8,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#06060D",
+          "color2": "#141428",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.9,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.45,
+        "bassSensitivity": 1.4,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8126196Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "infinite-tunnel",
+      "name": "Infinite Tunnel",
+      "category": "Geometric",
+      "description": "Hexagonal frames carry pulses toward you, forever.",
+      "author": "Audio Dimension",
+      "tags": [
+        "geometric",
+        "geometric tunnel"
+      ],
+      "visualizerId": "geometric-tunnel",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.1,
+          "segments": 6,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00E5FF",
+            "#2979FF",
+            "#651FFF",
+            "#F50057"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 0,
+          "distance": 1.5,
+          "fov": 80,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#02030A",
+          "color2": "#02030A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.55,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8128261Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "rotating-cubes",
+      "name": "Rotating Cubes",
+      "category": "Geometric",
+      "description": "A lattice of spinning cubes sized by the spectrum.",
+      "author": "Audio Dimension",
+      "tags": [
+        "geometric",
+        "cube field"
+      ],
+      "visualizerId": "cube-field",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 5,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#F72585",
+            "#7209B7",
+            "#3A0CA3",
+            "#4CC9F0"
+          ]
+        },
+        "camera": {
+          "yaw": 30,
+          "pitch": 24,
+          "distance": 14,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 8,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#05030D",
+          "color2": "#1B0B30",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.9,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.6,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8128361Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "sacred-geometry",
+      "name": "Sacred Geometry",
+      "category": "Geometric",
+      "description": "The flower of life, glowing gold, breathing with the bands.",
+      "author": "Audio Dimension",
+      "tags": [
+        "geometric",
+        "sacred geometry"
+      ],
+      "visualizerId": "sacred-geometry",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.2,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFD700",
+            "#FFB300",
+            "#FFF3C4",
+            "#FF8F00"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#0A0603",
+          "color2": "#1F1305",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.7,
+        "bassSensitivity": 1.1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8128523Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "morphing-polyhedrons",
+      "name": "Morphing Polyhedrons",
+      "category": "Geometric",
+      "description": "Cube, octahedron and icosahedron shells swelling with different bands.",
+      "author": "Audio Dimension",
+      "tags": [
+        "geometric",
+        "rotating geometric structures"
+      ],
+      "visualizerId": "rotating-geometry",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.1,
+          "segments": 5,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#84FFFF",
+            "#B388FF",
+            "#FF80AB",
+            "#FFFF8D"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 15,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#04040C",
+          "color2": "#12122A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.6,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8129116Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "abstract-dimensions",
+      "name": "Abstract Dimensions",
+      "category": "Geometric",
+      "description": "Counter-rotating star polygons that stretch with every band.",
+      "author": "Audio Dimension",
+      "tags": [
+        "geometric",
+        "sacred geometry"
+      ],
+      "visualizerId": "sacred-geometry",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 2.8,
+          "particleDensity": 1,
+          "glow": 1.2,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00BCD4",
+            "#E040FB",
+            "#FFEB3B",
+            "#69F0AE"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "AnimatedGradient",
+          "color1": "#05020F",
+          "color2": "#101A3A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.55,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8129232Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "particle-universe",
+      "name": "Particle Universe",
+      "category": "Particles",
+      "description": "Thousands of points orbit a hidden centre like a tiny universe.",
+      "author": "Audio Dimension",
+      "tags": [
+        "particles",
+        "fireflies"
+      ],
+      "visualizerId": "fireflies",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.4,
+          "glow": 1.6,
+          "segments": 0,
+          "variant": 3,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#A0C4FF",
+            "#BDB2FF",
+            "#FFC6FF",
+            "#FDFFB6"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 30,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 2,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#02030C",
+          "color2": "#0A0F2A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.65,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8129362Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fireflies",
+      "name": "Fireflies",
+      "category": "Particles",
+      "description": "Warm lights wander through a dark forest and blink with the music.",
+      "author": "Audio Dimension",
+      "tags": [
+        "particles",
+        "fireflies"
+      ],
+      "visualizerId": "fireflies",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.7,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFF59D",
+            "#FFD54F",
+            "#B9F6CA",
+            "#FFAB40"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 10,
+          "distance": 11,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 2,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#020A05",
+          "color2": "#0B2B14",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.6,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 0.9,
+        "smoothing": 0.7,
+        "bassSensitivity": 1,
+        "midSensitivity": 1.1,
+        "trebleSensitivity": 1.2,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8131844Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "particle-storm",
+      "name": "Particle Storm",
+      "category": "Particles",
+      "description": "Beats blast a flat shockwave of particles outward.",
+      "author": "Audio Dimension",
+      "tags": [
+        "particles",
+        "particle explosion"
+      ],
+      "visualizerId": "particle-explosion",
+      "visual": {
+        "params": {
+          "speed": 1.2,
+          "reactivity": 1.3,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.4,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FF5252",
+            "#FF9100",
+            "#FFEA00",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 12,
+          "distance": 11,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 5,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#050202",
+          "color2": "#050202",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.4,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.2,
+        "smoothing": 0.4,
+        "bassSensitivity": 1.4,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8131999Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "magnetic-particles",
+      "name": "Magnetic Particles",
+      "category": "Particles",
+      "description": "Particles stream along the field lines of a magnet.",
+      "author": "Audio Dimension",
+      "tags": [
+        "particles",
+        "vortex"
+      ],
+      "visualizerId": "vortex",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#40C4FF",
+            "#00E676",
+            "#EA80FC",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 32,
+          "distance": 7,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 3,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#02050A",
+          "color2": "#02050A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.6,
+        "bassSensitivity": 1.1,
+        "midSensitivity": 1.1,
+        "trebleSensitivity": 1.1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8133966Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "energy-explosion",
+      "name": "Energy Explosion",
+      "category": "Particles",
+      "description": "Spherical bursts of colour detonate on every kick.",
+      "author": "Audio Dimension",
+      "tags": [
+        "particles",
+        "particle explosion"
+      ],
+      "visualizerId": "particle-explosion",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.2,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.2,
+          "glow": 1.2,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00E5FF",
+            "#76FF03",
+            "#FFEA00",
+            "#FF1744"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 12,
+          "distance": 11,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 5,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#030308",
+          "color2": "#030308",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.5,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.45,
+        "bassSensitivity": 1.4,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8134115Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "particle-rain",
+      "name": "Particle Rain",
+      "category": "Particles",
+      "description": "Soft glowing drops fall faster in the active frequencies.",
+      "author": "Audio Dimension",
+      "tags": [
+        "particles",
+        "digital rain"
+      ],
+      "visualizerId": "digital-rain",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.7,
+          "segments": 128,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#80D8FF",
+            "#40C4FF",
+            "#B3E5FC",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#020813",
+          "color2": "#0C2540",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.6,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1.2,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8134277Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "floating-dust",
+      "name": "Floating Dust",
+      "category": "Particles",
+      "description": "Fine dust motes drift in warm light and brighten with volume.",
+      "author": "Audio Dimension",
+      "tags": [
+        "particles",
+        "fireflies"
+      ],
+      "visualizerId": "fireflies",
+      "visual": {
+        "params": {
+          "speed": 0.8,
+          "reactivity": 0.9,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.2,
+          "glow": 1.5,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFE0B2",
+            "#FFCC80",
+            "#FFFFFF",
+            "#FFAB91"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 10,
+          "distance": 11,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 2,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#0E0905",
+          "color2": "#2A1A0C",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.8,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.6,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 0.9,
+        "smoothing": 0.8,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8134404Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "particle-vortex",
+      "name": "Particle Vortex",
+      "category": "Particles",
+      "description": "A glowing tornado of particles climbing into the dark.",
+      "author": "Audio Dimension",
+      "tags": [
+        "particles",
+        "vortex"
+      ],
+      "visualizerId": "vortex",
+      "visual": {
+        "params": {
+          "speed": 1.1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1.1,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#E040FB",
+            "#7C4DFF",
+            "#448AFF",
+            "#18FFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 12,
+          "distance": 11,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 3,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#04020C",
+          "color2": "#150A30",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.55,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8134463Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "classic-wave",
+      "name": "Classic Wave",
+      "category": "Waveforms",
+      "description": "A clean single waveform line.",
+      "author": "Audio Dimension",
+      "tags": [
+        "waveforms",
+        "neon waveform"
+      ],
+      "visualizerId": "neon-waveform",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 2,
+          "particleDensity": 1,
+          "glow": 0.9,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#4CAF50",
+            "#8BC34A",
+            "#CDDC39",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#050805",
+          "color2": "#050805",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.5,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.4,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "mirror"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8135518Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "neon-wave",
+      "name": "Neon Wave",
+      "category": "Waveforms",
+      "description": "A thick mirrored waveform glowing in magenta and cyan.",
+      "author": "Audio Dimension",
+      "tags": [
+        "waveforms",
+        "neon waveform"
+      ],
+      "visualizerId": "neon-waveform",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 4,
+          "particleDensity": 1,
+          "glow": 1.3,
+          "segments": 0,
+          "variant": 0,
+          "mirror": true,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FF00CC",
+            "#7B2FF7",
+            "#00E5FF",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#06020F",
+          "color2": "#1A0830",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.5,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.45,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "mirror"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8136286Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "circular-wave",
+      "name": "Circular Wave",
+      "category": "Waveforms",
+      "description": "The waveform bent into a spinning ring.",
+      "author": "Audio Dimension",
+      "tags": [
+        "waveforms",
+        "circular oscilloscope"
+      ],
+      "visualizerId": "circular-oscilloscope",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.2,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 10
+        },
+        "palette": {
+          "colors": [
+            "#00F5FF",
+            "#FF2BD6",
+            "#FFD60A",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#030309",
+          "color2": "#101030",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "rotation"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8136366Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wave-mountain",
+      "name": "Wave Mountain",
+      "category": "Waveforms",
+      "description": "A rolling mountain range built from recent spectra.",
+      "author": "Audio Dimension",
+      "tags": [
+        "waveforms",
+        "frequency mountains"
+      ],
+      "visualizerId": "frequency-mountains",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 2.5,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#2E8B57",
+            "#00C9A7",
+            "#92E3A9",
+            "#E0FFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 24,
+          "distance": 13,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 2,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#020A0A",
+          "color2": "#0A2B2B",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.9,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.6,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8137203Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "liquid-spectrum",
+      "name": "Liquid Spectrum",
+      "category": "Waveforms",
+      "description": "A silky filled spectrum curve with a watery reflection.",
+      "author": "Audio Dimension",
+      "tags": [
+        "waveforms",
+        "liquid spectrum"
+      ],
+      "visualizerId": "liquid-spectrum",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00C6FF",
+            "#0072FF",
+            "#7F00FF",
+            "#E100FF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#03030F",
+          "color2": "#0A1040",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.65,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "mirror"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8139232Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "frequency-ocean",
+      "name": "Frequency Ocean",
+      "category": "Waveforms",
+      "description": "A lit ocean where each band raises its own swell; beats make ripples.",
+      "author": "Audio Dimension",
+      "tags": [
+        "waveforms",
+        "frequency ocean"
+      ],
+      "visualizerId": "frequency-ocean",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#0A6EBD",
+            "#2FA4E7",
+            "#7FD1FF",
+            "#E0F7FF"
+          ]
+        },
+        "camera": {
+          "yaw": 20,
+          "pitch": 28,
+          "distance": 14,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 3,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#020812",
+          "color2": "#0A2540",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.9,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.65,
+        "bassSensitivity": 1.3,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8140021Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "audio-ribbon",
+      "name": "Audio Ribbon",
+      "category": "Waveforms",
+      "description": "A pastel ribbon woven from the last second of waveform.",
+      "author": "Audio Dimension",
+      "tags": [
+        "waveforms",
+        "audio ribbon"
+      ],
+      "visualizerId": "audio-ribbon",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FF9A9E",
+            "#FAD0C4",
+            "#A18CD1",
+            "#FBC2EB"
+          ]
+        },
+        "camera": {
+          "yaw": 12,
+          "pitch": 20,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 4,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#0B0612",
+          "color2": "#241838",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8142149Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "waveform-tunnel",
+      "name": "Waveform Tunnel",
+      "category": "Waveforms",
+      "description": "Fly inside a tunnel whose walls are the waveform.",
+      "author": "Audio Dimension",
+      "tags": [
+        "waveforms",
+        "audio ribbon"
+      ],
+      "visualizerId": "audio-ribbon",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#43E97B",
+            "#38F9D7",
+            "#4FACFE",
+            "#F093FB"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 0,
+          "distance": 1.5,
+          "fov": 80,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#02060A",
+          "color2": "#02060A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.814406Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "minimal-spectrum",
+      "name": "Minimal Spectrum",
+      "category": "Minimal \u0026 Elegant",
+      "description": "A few quiet white bars. Nothing else.",
+      "author": "Audio Dimension",
+      "tags": [
+        "minimal \u0026 elegant",
+        "classic spectrum"
+      ],
+      "visualizerId": "classic-spectrum",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 2,
+          "particleDensity": 1,
+          "glow": 0.8,
+          "segments": 24,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFFFFF",
+            "#E0E0E0",
+            "#BDBDBD",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#0B0B0D",
+          "color2": "#0B0B0D",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.3,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.3,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.7,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "mirror"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8145067Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "soft-pulse",
+      "name": "Soft Pulse",
+      "category": "Minimal \u0026 Elegant",
+      "description": "A gentle pastel ring that breathes inward.",
+      "author": "Audio Dimension",
+      "tags": [
+        "minimal \u0026 elegant",
+        "circular spectrum"
+      ],
+      "visualizerId": "circular-spectrum",
+      "visual": {
+        "params": {
+          "speed": 0.6,
+          "reactivity": 0.8,
+          "scale": 1.6,
+          "lineWidth": 2.5,
+          "particleDensity": 1,
+          "glow": 0.9,
+          "segments": 48,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFD6E0",
+            "#E0BBE4",
+            "#BDE0FE",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#0D0D14",
+          "color2": "#1B1B2A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.6,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.4,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 0.9,
+        "smoothing": 0.85,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "rotation"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8145712Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "ambient-rings",
+      "name": "Ambient Rings",
+      "category": "Minimal \u0026 Elegant",
+      "description": "Slow concentric rings, no flashes, just calm motion.",
+      "author": "Audio Dimension",
+      "tags": [
+        "minimal \u0026 elegant",
+        "audio-reactive rings"
+      ],
+      "visualizerId": "reactive-rings",
+      "visual": {
+        "params": {
+          "speed": 0.7,
+          "reactivity": 0.8,
+          "scale": 1,
+          "lineWidth": 2.5,
+          "particleDensity": 1,
+          "glow": 0.9,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#A8DADC",
+            "#BDB2FF",
+            "#F1FAEE",
+            "#FFC8DD"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#0A0D12",
+          "color2": "#16202B",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.6,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.45,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 0.9,
+        "smoothing": 0.85,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8145791Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "minimal-lines",
+      "name": "Minimal Lines",
+      "category": "Minimal \u0026 Elegant",
+      "description": "Five hairline waves in monochrome.",
+      "author": "Audio Dimension",
+      "tags": [
+        "minimal \u0026 elegant",
+        "energy waves"
+      ],
+      "visualizerId": "energy-waves",
+      "visual": {
+        "params": {
+          "speed": 0.8,
+          "reactivity": 0.9,
+          "scale": 1,
+          "lineWidth": 1.5,
+          "particleDensity": 1,
+          "glow": 0.9,
+          "segments": 5,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFFFFF",
+            "#CFD8DC",
+            "#90A4AE",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#0A0A0C",
+          "color2": "#0A0A0C",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.4,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.35,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 0.9,
+        "smoothing": 0.8,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8145947Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "floating-orbs",
+      "name": "Floating Orbs",
+      "category": "Minimal \u0026 Elegant",
+      "description": "Large soft bokeh orbs that swell with the bass.",
+      "author": "Audio Dimension",
+      "tags": [
+        "minimal \u0026 elegant",
+        "fireflies"
+      ],
+      "visualizerId": "fireflies",
+      "visual": {
+        "params": {
+          "speed": 0.8,
+          "reactivity": 0.9,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 0.9,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFADAD",
+            "#FFD6A5",
+            "#CAFFBF",
+            "#9BF6FF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 10,
+          "distance": 11,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 2,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#0C0C12",
+          "color2": "#1D1D2B",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.8,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.45,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 0.9,
+        "smoothing": 0.85,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8146521Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "smooth-equalizer",
+      "name": "Smooth Equalizer",
+      "category": "Minimal \u0026 Elegant",
+      "description": "Soft pastel LED columns.",
+      "author": "Audio Dimension",
+      "tags": [
+        "minimal \u0026 elegant",
+        "neon equalizer"
+      ],
+      "visualizerId": "neon-equalizer",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 0.9,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 0.9,
+          "segments": 24,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FF9AA2",
+            "#FFDAC1",
+            "#B5EAD7",
+            "#C7CEEA"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#0D0D12",
+          "color2": "#1C1C26",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.6,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.4,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 0.95,
+        "smoothing": 0.75,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8146643Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "glass-spectrum",
+      "name": "Glass Spectrum",
+      "category": "Minimal \u0026 Elegant",
+      "description": "Translucent glass bars with a faint reflection.",
+      "author": "Audio Dimension",
+      "tags": [
+        "minimal \u0026 elegant",
+        "liquid spectrum"
+      ],
+      "visualizerId": "liquid-spectrum",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 2.5,
+          "particleDensity": 1,
+          "glow": 0.9,
+          "segments": 32,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#D0F4FF",
+            "#A0E7FF",
+            "#B8C0FF",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#101820",
+          "color2": "#1B2A3A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.7,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.45,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.7,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "mirror"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8147209Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "elegant-frequencies",
+      "name": "Elegant Frequencies",
+      "category": "Minimal \u0026 Elegant",
+      "description": "A mirrored golden line with delicate peak markers.",
+      "author": "Audio Dimension",
+      "tags": [
+        "minimal \u0026 elegant",
+        "liquid spectrum"
+      ],
+      "visualizerId": "liquid-spectrum",
+      "visual": {
+        "params": {
+          "speed": 0.9,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 2,
+          "particleDensity": 1,
+          "glow": 0.9,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#F5E6CA",
+            "#E8C547",
+            "#FFFFFF",
+            "#D4AF37"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#0A0A0C",
+          "color2": "#0A0A0C",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.6,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.75,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "mirror"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8147412Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "digital-dna",
+      "name": "Digital DNA",
+      "category": "Experimental",
+      "description": "A double helix that twists faster with energy.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "digital dna"
+      ],
+      "visualizerId": "dna-helix",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.2,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00FFC6",
+            "#00A3FF",
+            "#FF2E88",
+            "#FFE600"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 5,
+          "distance": 10,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#02060C",
+          "color2": "#08182E",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.55,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.814756Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "energy-core",
+      "name": "Energy Core",
+      "category": "Experimental",
+      "description": "A white-hot core wrapped in long crystal shards.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "crystal core"
+      ],
+      "visualizerId": "crystal-core",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.2,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.3,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FFEA00",
+            "#FF6D00",
+            "#FF1744",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 14,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 8,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#050202",
+          "color2": "#050202",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.6,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.6,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": true,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.45,
+        "bassSensitivity": 1.4,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8149577Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "magnetic-field",
+      "name": "Magnetic Field",
+      "category": "Experimental",
+      "description": "Dipole field lines with energy flowing along them.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "electric web"
+      ],
+      "visualizerId": "electric-web",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00E5FF",
+            "#2979FF",
+            "#D500F9",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 15,
+          "distance": 10,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#02030A",
+          "color2": "#02030A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.6,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8150582Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fluid-universe",
+      "name": "Fluid Universe",
+      "category": "Experimental",
+      "description": "Warped liquid colour that swirls with the bands.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "fluid field"
+      ],
+      "visualizerId": "fluid-field",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00C9FF",
+            "#92FE9D",
+            "#F7971E",
+            "#FF4E50"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000000",
+          "color2": "#000000",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.8,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.7,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8152448Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "plasma-world",
+      "name": "Plasma World",
+      "category": "Experimental",
+      "description": "A glowing plasma planet-sea with a drifting second sun.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "plasma"
+      ],
+      "visualizerId": "plasma",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#12C2E9",
+            "#C471ED",
+            "#F64F59",
+            "#FFD200"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000000",
+          "color2": "#000000",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.9,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.65,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8152546Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "dimensional-portal",
+      "name": "Dimensional Portal",
+      "category": "Experimental",
+      "description": "A log-polar fractal wormhole that opens on the bass.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "fractal"
+      ],
+      "visualizerId": "fractal",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00F5FF",
+            "#7C4DFF",
+            "#FF2BD6",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000000",
+          "color2": "#000000",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": true,
+          "chromaticAmount": 0.008,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.55,
+        "bassSensitivity": 1.3,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8153131Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "electric-web",
+      "name": "Electric Web",
+      "category": "Experimental",
+      "description": "Glowing nodes link into a web when the music gets loud.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "electric web"
+      ],
+      "visualizerId": "electric-web",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.1,
+          "segments": 0,
+          "variant": 0,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#B9F3FC",
+            "#7B9CFF",
+            "#E4B1FF",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 15,
+          "distance": 10,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#02030C",
+          "color2": "#0C1030",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.2,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1.2,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8154098Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "organic-geometry",
+      "name": "Organic Geometry",
+      "category": "Experimental",
+      "description": "Living cells whose walls pulse with the bands.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "fluid field"
+      ],
+      "visualizerId": "fluid-field",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#B5EAD7",
+            "#FF9AA2",
+            "#C7CEEA",
+            "#FFDAC1"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#050505",
+          "color2": "#050505",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.8,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.7,
+        "bassSensitivity": 1.1,
+        "midSensitivity": 1.2,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8154202Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "hyperdrive",
+      "name": "Hyperdrive",
+      "category": "Experimental",
+      "description": "Stars stretch into light streaks as the jump engages.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "starfield"
+      ],
+      "visualizerId": "starfield",
+      "visual": {
+        "params": {
+          "speed": 1.2,
+          "reactivity": 1.2,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1.2,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#9BF6FF",
+            "#A0C4FF",
+            "#BDB2FF",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 0,
+          "distance": 1.5,
+          "fov": 75,
+          "orthographic": false,
+          "autoRotateSpeed": 0,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000208",
+          "color2": "#000208",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.3,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.6,
+          "chromaticAberration": true,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": true,
+          "motionBlurAmount": 0.45,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1.1,
+        "smoothing": 0.4,
+        "bassSensitivity": 1.3,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "particleDensity",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8154337Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "holographic-core",
+      "name": "Holographic Core",
+      "category": "Experimental",
+      "description": "A wireframe hologram scanned by a moving ring.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "crystal core"
+      ],
+      "visualizerId": "crystal-core",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 2.5,
+          "particleDensity": 1,
+          "glow": 1.2,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#00FFFF",
+            "#00B7FF",
+            "#8A7DFF",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 0,
+          "pitch": 14,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 8,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Gradient",
+          "color1": "#01060C",
+          "color2": "#04152A",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1.3,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.55,
+          "chromaticAberration": true,
+          "chromaticAmount": 0.006,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": true,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.55,
+        "bassSensitivity": 1,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant",
+        "lineWidth",
+        "elements",
+        "camera"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8155389Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "fractal-universe",
+      "name": "Fractal Universe",
+      "category": "Experimental",
+      "description": "A kaleidoscopic fractal that folds in on itself.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "fractal"
+      ],
+      "visualizerId": "fractal",
+      "visual": {
+        "params": {
+          "speed": 1,
+          "reactivity": 1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 1,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FDEB71",
+            "#F8D800",
+            "#FF6B6B",
+            "#6A11CB"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000000",
+          "color2": "#000000",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 0.8,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.45,
+          "chromaticAberration": false,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": false,
+          "distortionAmount": 0.12,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.65,
+        "bassSensitivity": 1.2,
+        "midSensitivity": 1.2,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8156193Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "dimension-shift",
+      "name": "Dimension Shift",
+      "category": "Experimental",
+      "description": "Polar-warped plasma with a warped, shifting lens.",
+      "author": "Audio Dimension",
+      "tags": [
+        "experimental",
+        "plasma"
+      ],
+      "visualizerId": "plasma",
+      "visual": {
+        "params": {
+          "speed": 1.1,
+          "reactivity": 1.1,
+          "scale": 1,
+          "lineWidth": 3,
+          "particleDensity": 1,
+          "glow": 1,
+          "segments": 0,
+          "variant": 2,
+          "mirror": false,
+          "rotation": 0
+        },
+        "palette": {
+          "colors": [
+            "#FC466B",
+            "#3F5EFB",
+            "#00F2FE",
+            "#FFFFFF"
+          ]
+        },
+        "camera": {
+          "yaw": 25,
+          "pitch": 18,
+          "distance": 9,
+          "fov": 55,
+          "orthographic": false,
+          "autoRotateSpeed": 6,
+          "audioShake": 0,
+          "zoom2D": 1
+        },
+        "background": {
+          "mode": "Solid",
+          "color1": "#000000",
+          "color2": "#000000",
+          "animationSpeed": 0.3,
+          "audioReactive": 0.5,
+          "assetId": null,
+          "imagePath": null,
+          "imageDim": 0.35
+        },
+        "effects": {
+          "bloom": true,
+          "bloomAmount": 1,
+          "bloomThreshold": 0.55,
+          "vignette": true,
+          "vignetteAmount": 0.5,
+          "chromaticAberration": true,
+          "chromaticAmount": 0.012,
+          "rgbSeparation": false,
+          "rgbSeparationAmount": 0.004,
+          "filmGrain": false,
+          "filmGrainAmount": 0.06,
+          "scanlines": false,
+          "scanlineAmount": 0.3,
+          "colorGrading": false,
+          "saturation": 1.15,
+          "contrast": 1.05,
+          "brightness": 0,
+          "hueShift": 0,
+          "distortion": true,
+          "distortionAmount": 0.15,
+          "blur": false,
+          "blurAmount": 0.4,
+          "noise": false,
+          "noiseAmount": 0.05,
+          "motionBlur": false,
+          "motionBlurAmount": 0.6,
+          "lightRays": false,
+          "lightRaysAmount": 0.5
+        }
+      },
+      "audio": {
+        "sensitivity": 1,
+        "smoothing": 0.5,
+        "bassSensitivity": 1.3,
+        "midSensitivity": 1,
+        "trebleSensitivity": 1,
+        "frequencyTilt": 0,
+        "autoGain": true,
+        "peakDetection": true,
+        "bandEnabled": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "customizable": [
+        "speed",
+        "reactivity",
+        "scale",
+        "glow",
+        "palette",
+        "background",
+        "effects",
+        "sensitivity",
+        "frequencyResponse",
+        "variant"
+      ],
+      "createdUtc": "2026-11-20T07:29:46.8156373Z"
+    }
+  ]
+}
