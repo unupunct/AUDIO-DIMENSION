@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\AudioDimension.Core\AudioDimension.Core.csproj" />
+    <ProjectReference Include="..\AudioDimension.Audio\AudioDimension.Audio.csproj" />
+    <ProjectReference Include="..\AudioDimension.Visuals\AudioDimension.Visuals.csproj" />
+    <ProjectReference Include="..\AudioDimension.Presets\AudioDimension.Presets.csproj" />
+    <ProjectReference Include="..\AudioDimension.Recording\AudioDimension.Recording.csproj" />
+    <ProjectReference Include="..\AudioDimension.Projects\AudioDimension.Projects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="OpenTK.GLWpfControl" Version="4.3.3" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>AudioDimension</AssemblyName>
+    <RootNamespace>AudioDimension.App</RootNamespace>
+    <Version>1.0.0</Version>
+    <Product>Audio Dimension</Product>
+    <Company>Audio Dimension</Company>
+    <Description>Real-time audio visualization studio</Description>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Thumbnails\*.png" />
+  </ItemGroup>
+
+  <!-- Bundled FFmpeg (fetched by tools/get-ffmpeg.ps1; not stored in git). Deployed next to the app under Tools\ffmpeg\. -->
+  <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)..\..\third_party\ffmpeg\bin\ffmpeg.exe')">
+    <None Include="..\..\third_party\ffmpeg\bin\*.*" Link="Tools\ffmpeg\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\third_party\ffmpeg\LICENSE.txt" Link="Tools\ffmpeg\LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,157 @@
+<UserControl x:Class="AudioDimension.App.Views.RecordingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UserControl.Resources>
+        <Style x:Key="Tiny" TargetType="TextBlock" BasedOn="{StaticResource Muted}"><Setter Property="FontSize" Value="11"/><Setter Property="Margin" Value="0,10,0,4"/></Style>
+        <Style x:Key="Danger" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Background" Value="#C62828"/><Setter Property="Foreground" Value="White"/><Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style x:Key="Hidden" TargetType="FrameworkElement">
+            <Setter Property="Visibility" Value="Collapsed"/>
+        </Style>
+    </UserControl.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="0,0,12,16">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*" MaxWidth="460"/><ColumnDefinition Width="20"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+
+            <!-- Settings -->
+            <StackPanel>
+                <TextBlock Text="Recording &amp; Export" Style="{StaticResource H1}"/>
+                <TextBlock Text="{Binding FfmpegStatus}" Style="{StaticResource Muted}" Margin="0,4,0,0"/>
+                <TextBlock Text="{Binding EncoderStatus}" Style="{StaticResource Muted}" FontSize="11"/>
+
+                <Border Style="{StaticResource Card}" Margin="0,14,0,0"><StackPanel>
+                    <TextBlock Text="Video format" Style="{StaticResource Tiny}" Margin="0,0,0,4"/>
+                    <ComboBox ItemsSource="{Binding Formats}" SelectedItem="{Binding SelectedFormat}" AutomationProperties.Name="Video format"/>
+                    <TextBlock Text="Resolution" Style="{StaticResource Tiny}"/>
+                    <ComboBox ItemsSource="{Binding Sizes}" SelectedItem="{Binding SelectedSize}" AutomationProperties.Name="Resolution"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                        <StackPanel.Style>
+                            <Style TargetType="StackPanel"><Setter Property="Visibility" Value="Collapsed"/>
+                                <Style.Triggers><DataTrigger Binding="{Binding IsCustomSize}" Value="True"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers></Style>
+                        </StackPanel.Style>
+                        <TextBox Width="90" Text="{Binding CustomWidth, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="Custom width"/>
+                        <TextBlock Text="x" Margin="8,6" Style="{StaticResource Muted}"/>
+                        <TextBox Width="90" Text="{Binding CustomHeight, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="Custom height"/>
+                        <TextBlock Text="px (even numbers, 128-7680)" Margin="10,6,0,0" Style="{StaticResource Muted}" FontSize="11"/>
+                    </StackPanel>
+                    <TextBlock Text="Frame rate" Style="{StaticResource Tiny}"/>
+                    <ComboBox ItemsSource="{Binding FrameRates}" SelectedItem="{Binding SelectedFps}" AutomationProperties.Name="Frame rate"/>
+                    <TextBlock Text="{Binding Quality, StringFormat=Quality: {0}}" Style="{StaticResource Tiny}"/>
+                    <Slider Minimum="1" Maximum="100" Value="{Binding Quality}" AutomationProperties.Name="Video quality"/>
+                    <TextBlock Text="Encoder" Style="{StaticResource Tiny}"/>
+                    <ComboBox ItemsSource="{Binding Encoders}" SelectedItem="{Binding Encoder}" AutomationProperties.Name="Encoder"/>
+                    <CheckBox Content="Include the recorded audio in the video" IsChecked="{Binding IncludeAudio}" Margin="0,12,0,0"/>
+                    <CheckBox Content="Render the video automatically when I stop recording" IsChecked="{Binding AutoRender}"/>
+                </StackPanel></Border>
+
+                <Border Style="{StaticResource Card}" Margin="0,12,0,0"><StackPanel>
+                    <TextBlock Text="Output folder" Style="{StaticResource Tiny}" Margin="0,0,0,4"/>
+                    <DockPanel>
+                        <Button DockPanel.Dock="Right" Content="Browse..." Command="{Binding BrowseFolderCommand}" Margin="6,0,0,0" Padding="12,6"/>
+                        <TextBox Text="{Binding OutputFolder, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="Output folder"/>
+                    </DockPanel>
+                    <TextBlock Text="File name prefix" Style="{StaticResource Tiny}"/>
+                    <TextBox Text="{Binding FilePrefix, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="File name prefix"/>
+                    <TextBlock Text="{Binding Summary}" Style="{StaticResource Muted}" TextWrapping="Wrap" Margin="0,12,0,0"/>
+                    <TextBlock Text="{Binding SizeEstimate}" Style="{StaticResource Muted}" TextWrapping="Wrap" FontSize="11" Margin="0,4,0,0"/>
+                </StackPanel></Border>
+            </StackPanel>
+
+            <!-- Controls, progress, history -->
+            <StackPanel Grid.Column="2" Margin="0,10,0,0">
+                <Border Style="{StaticResource Card}"><StackPanel>
+                    <DockPanel>
+                        <TextBlock DockPanel.Dock="Right" Text="{Binding ElapsedText}" FontFamily="Cascadia Mono, Consolas" FontSize="30" FontWeight="SemiBold"/>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Ellipse Width="14" Height="14" Margin="0,0,10,0">
+                                <Ellipse.Style>
+                                    <Style TargetType="Ellipse">
+                                        <Setter Property="Fill" Value="#555B66"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsRecording}" Value="True"><Setter Property="Fill" Value="#F0616D"/></DataTrigger>
+                                            <DataTrigger Binding="{Binding IsPaused}" Value="True"><Setter Property="Fill" Value="#F5C842"/></DataTrigger>
+                                            <DataTrigger Binding="{Binding IsExporting}" Value="True"><Setter Property="Fill" Value="{StaticResource AccentBrush}"/></DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Ellipse.Style>
+                            </Ellipse>
+                            <TextBlock Text="{Binding StateText}" FontSize="16" FontWeight="SemiBold" VerticalAlignment="Center" AutomationProperties.Name="Recording status"/>
+                        </StackPanel>
+                    </DockPanel>
+                    <WrapPanel Margin="0,14,0,0">
+                        <Button Command="{Binding ToggleRecordCommand}" Style="{StaticResource Danger}" Padding="18,10" Margin="0,0,8,6" IsEnabled="{Binding CanRecord}" AutomationProperties.Name="Record">
+                            <StackPanel Orientation="Horizontal"><TextBlock Text="&#xE7C8;" FontFamily="Segoe MDL2 Assets" Foreground="White"/><TextBlock Text="{Binding RecordLabel}" Margin="8,0,0,0" Foreground="White"/></StackPanel>
+                        </Button>
+                        <Button Command="{Binding TogglePauseCommand}" Padding="16,10" Margin="0,0,8,6" Content="{Binding PauseLabel}" IsEnabled="{Binding IsRecording}" AutomationProperties.Name="Pause or resume recording"/>
+                        <Button Command="{Binding RenderCapturedCommand}" Padding="16,10" Margin="0,0,8,6" Content="Render video" IsEnabled="{Binding HasCapture}" Style="{StaticResource AccentButton}" AutomationProperties.Name="Render video"/>
+                        <Button Command="{Binding RenderFromFileCommand}" Padding="16,10" Margin="0,0,8,6" Content="Render from an audio file..." AutomationProperties.Name="Render from audio file"/>
+                    </WrapPanel>
+                    <TextBlock Style="{StaticResource Muted}" FontSize="11" TextWrapping="Wrap"
+                               Text="Recording captures the audio source you started (microphone or system audio) and nothing else. The video is then rendered frame by frame from that audio with your current look and text, so the picture, text animations and sound stay in sync even at 4K."/>
+                </StackPanel></Border>
+
+                <Border Margin="0,12,0,0">
+                    <Border.Style>
+                        <Style TargetType="Border" BasedOn="{StaticResource Card}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers><DataTrigger Binding="{Binding IsExporting}" Value="True"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel>
+                        <TextBlock Text="Exporting" FontWeight="SemiBold"/>
+                        <ProgressBar Minimum="0" Maximum="1" Value="{Binding Progress}" Height="10" Margin="0,8,0,6" Foreground="{StaticResource AccentBrush}" Background="{StaticResource BgBrush}" BorderThickness="0" AutomationProperties.Name="Export progress"/>
+                        <TextBlock Text="{Binding ProgressText}" Style="{StaticResource Muted}" TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding Progress, StringFormat={}{0:P0}}" Margin="0,4,0,0"/>
+                        <Button Content="Cancel export" Command="{Binding CancelExportCommand}" HorizontalAlignment="Left" Margin="0,10,0,0" Padding="14,7" AutomationProperties.Name="Cancel export"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="0,12,0,0" BorderBrush="{StaticResource DangerBrush}">
+                    <Border.Style>
+                        <Style TargetType="Border" BasedOn="{StaticResource Card}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers><DataTrigger Binding="{Binding ErrorText}" Value=""><Setter Property="Visibility" Value="Collapsed"/></DataTrigger></Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <TextBlock Text="{Binding ErrorText}" Foreground="{StaticResource DangerBrush}" TextWrapping="Wrap" AutomationProperties.Name="Export error"/>
+                </Border>
+
+                <Border Margin="0,12,0,0">
+                    <Border.Style>
+                        <Style TargetType="Border" BasedOn="{StaticResource Card}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers><DataTrigger Binding="{Binding ResultText}" Value=""><Setter Property="Visibility" Value="Collapsed"/></DataTrigger></Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel>
+                        <TextBlock Text="{Binding ResultText}" TextWrapping="Wrap" AutomationProperties.Name="Export result"/>
+                        <WrapPanel Margin="0,10,0,0">
+                            <Button Content="Play video" Command="{Binding OpenVideoCommand}" IsEnabled="{Binding HasOutput}" Padding="12,6" Margin="0,0,8,0"/>
+                            <Button Content="Show in folder" Command="{Binding ShowInFolderCommand}" Padding="12,6" Margin="0,0,8,0"/>
+                            <Button Content="Discard recording" Command="{Binding DiscardCaptureCommand}" IsEnabled="{Binding HasCapture}" Padding="12,6"/>
+                        </WrapPanel>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock Text="Export history" Style="{StaticResource H2}"/>
+                <Border Style="{StaticResource Card}" Padding="8">
+                    <ItemsControl ItemsSource="{Binding History}" AutomationProperties.Name="Export history">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <DockPanel Margin="6,5">
+                                    <TextBlock DockPanel.Dock="Right" Text="{Binding Status}" Style="{StaticResource Muted}" Margin="10,0,0,0"/>
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding FilePath}" TextTrimming="CharacterEllipsis" ToolTip="{Binding FilePath}"/>
+                                        <TextBlock Style="{StaticResource Muted}" FontSize="11"><Run Text="{Binding Format, Mode=OneWay}"/><Run Text="  -  "/><Run Text="{Binding Width, Mode=OneWay}"/><Run Text="x"/><Run Text="{Binding Height, Mode=OneWay}"/><Run Text=" @ "/><Run Text="{Binding Fps, Mode=OneWay}"/><Run Text=" fps  -  "/><Run Text="{Binding CreatedUtc, Mode=OneWay, StringFormat=g}"/></TextBlock>
+                                    </StackPanel>
+                                </DockPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Border>
+                <Button Content="Open export folder" Command="{Binding OpenFolderCommand}" HorizontalAlignment="Left" Margin="0,10,0,0" Padding="12,6"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,93 @@
+<UserControl x:Class="AudioDimension.App.Views.StudioView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:c="clr-namespace:AudioDimension.App.Controls">
+    <UserControl.Resources>
+        <Style x:Key="IconBtn" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Padding" Value="11,8"/>
+            <Setter Property="Margin" Value="0,0,6,0"/>
+        </Style>
+        <Style x:Key="Glyph" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+        <Style x:Key="Tiny" TargetType="TextBlock" BasedOn="{StaticResource Muted}">
+            <Setter Property="FontSize" Value="11"/><Setter Property="Margin" Value="0,0,0,3"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Quick control bar -->
+        <WrapPanel Grid.Row="0" Margin="0,0,0,10">
+            <Button Style="{StaticResource IconBtn}" AutomationProperties.Name="Play" Command="{Binding PlayCommand}" ToolTip="Start audio capture and preview">
+                <StackPanel Orientation="Horizontal"><TextBlock Text="&#xE768;" Style="{StaticResource Glyph}" Foreground="{StaticResource AccentBrush}"/><TextBlock Text="Play" Margin="7,0,0,0"/></StackPanel>
+            </Button>
+            <Button Style="{StaticResource IconBtn}" AutomationProperties.Name="Pause" Command="{Binding TogglePauseCommand}" ToolTip="Freeze / resume the animation">
+                <StackPanel Orientation="Horizontal"><TextBlock Text="&#xE769;" Style="{StaticResource Glyph}"/><TextBlock Text="Pause" Margin="7,0,0,0"/></StackPanel>
+            </Button>
+            <Button Style="{StaticResource IconBtn}" AutomationProperties.Name="Stop" Command="{Binding StopCommand}" ToolTip="Stop audio capture">
+                <StackPanel Orientation="Horizontal"><TextBlock Text="&#xE71A;" Style="{StaticResource Glyph}"/><TextBlock Text="Stop" Margin="7,0,0,0"/></StackPanel>
+            </Button>
+            <Button Style="{StaticResource IconBtn}" Command="{Binding RecordCommand}" AutomationProperties.Name="Record" ToolTip="Start or stop recording (captures the audio source; the video is rendered afterwards)">
+                <StackPanel Orientation="Horizontal"><TextBlock Text="&#xE7C8;" Style="{StaticResource Glyph}" Foreground="#FF5252"/><TextBlock Text="{Binding RecordButtonText}" Margin="7,0,0,0"/></StackPanel>
+            </Button>
+            <Button Style="{StaticResource IconBtn}" AutomationProperties.Name="Screenshot" Command="{Binding ScreenshotCommand}" ToolTip="Save a screenshot of the visualization">
+                <StackPanel Orientation="Horizontal"><TextBlock Text="&#xE722;" Style="{StaticResource Glyph}"/><TextBlock Text="Screenshot" Margin="7,0,0,0"/></StackPanel>
+            </Button>
+            <Button Style="{StaticResource IconBtn}" AutomationProperties.Name="Fullscreen" Command="{Binding FullscreenCommand}" ToolTip="Fullscreen preview on the selected monitor (Esc to exit)">
+                <StackPanel Orientation="Horizontal"><TextBlock Text="&#xE740;" Style="{StaticResource Glyph}"/><TextBlock Text="Fullscreen" Margin="7,0,0,0"/></StackPanel>
+            </Button>
+            <Button Style="{StaticResource IconBtn}" AutomationProperties.Name="Detach" Command="{Binding DetachCommand}" ToolTip="Move the preview into its own borderless window">
+                <StackPanel Orientation="Horizontal"><TextBlock Text="&#xE8A7;" Style="{StaticResource Glyph}"/><TextBlock Text="Detach" Margin="7,0,0,0"/></StackPanel>
+            </Button>
+        </WrapPanel>
+
+        <WrapPanel Grid.Row="1" Margin="0,0,0,10">
+            <StackPanel Margin="0,0,12,6" Width="210"><TextBlock Text="Quick preset" Style="{StaticResource Tiny}"/>
+                <ComboBox ItemsSource="{Binding PresetOptions}" SelectedItem="{Binding SelectedQuickPreset}" AutomationProperties.Name="Quick preset"/></StackPanel>
+            <StackPanel Margin="0,0,12,6" Width="190"><TextBlock Text="Visualization" Style="{StaticResource Tiny}"/>
+                <ComboBox ItemsSource="{Binding Visualizers}" SelectedItem="{Binding SelectedVisualizer}" ToolTip="{Binding SelectedVisualizer.Description}"/></StackPanel>
+            <StackPanel Margin="0,0,12,6" Width="150"><TextBlock Text="Audio source" Style="{StaticResource Tiny}"/>
+                <ComboBox ItemsSource="{Binding Audio.Sources}" SelectedItem="{Binding Audio.SelectedSource}"/></StackPanel>
+            <StackPanel Margin="0,0,12,6" Width="230"><TextBlock Text="Device" Style="{StaticResource Tiny}"/>
+                <ComboBox ItemsSource="{Binding Audio.Devices}" SelectedItem="{Binding Audio.SelectedDevice}"/></StackPanel>
+            <StackPanel Margin="0,0,12,6" Width="110"><TextBlock Text="Quality" Style="{StaticResource Tiny}"/>
+                <ComboBox ItemsSource="{Binding QualityLevels}" SelectedItem="{Binding SelectedQuality}"/></StackPanel>
+            <StackPanel Margin="0,0,12,6" Width="140"><TextBlock Text="Aspect ratio" Style="{StaticResource Tiny}"/>
+                <ComboBox ItemsSource="{Binding Aspects}" SelectedItem="{Binding SelectedAspect}"/></StackPanel>
+            <StackPanel Margin="0,0,12,6" Width="100"><TextBlock Text="Preview res." Style="{StaticResource Tiny}"/>
+                <ComboBox ItemsSource="{Binding PreviewScales}" SelectedItem="{Binding SelectedPreviewScale}"/></StackPanel>
+            <StackPanel Margin="0,0,12,6" Width="150"><TextBlock Text="Monitor (fullscreen)" Style="{StaticResource Tiny}"/>
+                <ComboBox ItemsSource="{Binding Monitors}" SelectedItem="{Binding SelectedMonitor}"/></StackPanel>
+            <StackPanel Margin="0,14,0,0" Orientation="Horizontal">
+                <CheckBox Content="Guides" IsChecked="{Binding ShowGrid}" Margin="0,0,12,0"/>
+                <CheckBox Content="Info" IsChecked="{Binding ShowHud}" Margin="0,0,12,0"/>
+                <CheckBox Content="Adaptive res." IsChecked="{Binding AdaptiveResolution}" ToolTip="Lower the internal resolution automatically if the frame rate drops" Margin="0,0,12,0"/>
+                <Button Content="Reset camera" Command="{Binding ResetCameraCommand}" Padding="10,4" Margin="0,0,6,0"/>
+                <Button Content="Reset visualization" Command="{Binding ResetVisualizationCommand}" Padding="10,4"/>
+            </StackPanel>
+        </WrapPanel>
+
+        <!-- Preview -->
+        <Border Grid.Row="2" CornerRadius="12" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" Background="#0A0B0E" ClipToBounds="True">
+            <c:AspectPanel Ratio="{Binding SelectedAspect.Ratio}">
+                <Border ClipToBounds="True" CornerRadius="4"><c:GlPreview/></Border>
+            </c:AspectPanel>
+        </Border>
+
+        <!-- Status -->
+        <DockPanel Grid.Row="3" Margin="2,8,0,0">
+            <TextBlock DockPanel.Dock="Right" Text="{Binding FpsText}" Style="{StaticResource Muted}"/>
+            <TextBlock DockPanel.Dock="Right" Text="{Binding GpuText}" Style="{StaticResource Muted}" Margin="0,0,16,0"/>
+            <StackPanel>
+                <TextBlock Text="{Binding RenderError}" Foreground="{StaticResource DangerBrush}" TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding WarningText}" Foreground="#F5C842" TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding ScreenshotStatus}" Style="{StaticResource Muted}"/>
+                <TextBlock Style="{StaticResource Muted}" Text="Drag to orbit (3D), wheel to zoom, double-click to reset the camera."/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,113 @@
+<UserControl x:Class="AudioDimension.App.Views.StudioInspectorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:c="clr-namespace:AudioDimension.App.Controls">
+    <UserControl.Resources>
+        <Style x:Key="Sec" TargetType="TextBlock" BasedOn="{StaticResource H2}">
+            <Setter Property="Margin" Value="0,16,0,6"/><Setter Property="Foreground" Value="{StaticResource AccentBrush}"/><Setter Property="FontSize" Value="12"/>
+        </Style>
+        <Style x:Key="Tiny" TargetType="TextBlock" BasedOn="{StaticResource Muted}"><Setter Property="FontSize" Value="11"/><Setter Property="Margin" Value="0,2,0,3"/></Style>
+    </UserControl.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="0,0,10,12" DataContext="{Binding Studio}">
+            <TextBlock Text="Inspector" Style="{StaticResource H2}" Margin="0,0,0,2"/>
+            <TextBlock Text="{Binding CurrentPresetName}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"/>
+            <TextBlock Text="{Binding SelectedVisualizer.Name, StringFormat=Engine: {0}}" Style="{StaticResource Tiny}"/>
+            <TextBlock Text="{Binding SelectedVisualizer.Description}" Style="{StaticResource Tiny}" TextWrapping="Wrap"/>
+
+            <TextBlock Text="PRESET" Style="{StaticResource Sec}"/>
+            <TextBox Text="{Binding NewPresetName, UpdateSourceTrigger=PropertyChanged}" AutomationProperties.Name="New preset name"/>
+            <ComboBox ItemsSource="{Binding PresetCategoryChoices}" SelectedItem="{Binding NewPresetCategory}" Margin="0,6,0,0"/>
+            <Button Content="Save as new preset" Command="{Binding SavePresetCommand}" HorizontalAlignment="Left" Margin="0,8,0,0" AutomationProperties.Name="Save as new preset"/>
+            <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
+                <Button Content="Update this preset" Command="{Binding UpdatePresetCommand}" IsEnabled="{Binding CanUpdatePreset}" Padding="10,6"/>
+                <Button Content="Revert" Command="{Binding RevertToPresetCommand}" Margin="6,0,0,0" Padding="10,6"/>
+            </StackPanel>
+            <TextBlock Text="{Binding PresetStatus}" Style="{StaticResource Tiny}" TextWrapping="Wrap"/>
+
+            <TextBlock Text="ANIMATION" Style="{StaticResource Sec}"/>
+            <c:ParamSlider Label="Speed" Unit="x" Minimum="0" Maximum="4" Value="{Binding Config.Params.Speed, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Audio reactivity" Unit="x" Minimum="0" Maximum="3" Value="{Binding Config.Params.Reactivity, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Scale" Unit="x" Minimum="0.3" Maximum="2.5" Value="{Binding Config.Params.Scale, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Line width" Unit="px" Minimum="1" Maximum="12" Value="{Binding Config.Params.LineWidth, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Glow brightness" Unit="x" Minimum="0.2" Maximum="3" Value="{Binding Config.Params.Glow, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Particle density" Unit="x" Minimum="0.1" Maximum="2" Value="{Binding Config.Params.ParticleDensity, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Extra rotation" Unit="deg/s" Minimum="-90" Maximum="90" Value="{Binding Config.Params.Rotation, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Elements (0 = auto)" Minimum="0" Maximum="128" Value="{Binding Config.Params.Segments, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Style variant" Minimum="0" Maximum="3" Value="{Binding Config.Params.Variant, Mode=TwoWay}"/>
+            <CheckBox Content="Mirror" IsChecked="{Binding Config.Params.Mirror, Mode=TwoWay}"/>
+
+            <TextBlock Text="COLOURS" Style="{StaticResource Sec}"/>
+            <ComboBox ItemsSource="{Binding Palettes}" SelectedItem="{Binding SelectedPalette}"/>
+            <UniformGrid Columns="2" Margin="0,8,0,0">
+                <TextBox Text="{Binding Color0, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,4,4"/>
+                <TextBox Text="{Binding Color1, UpdateSourceTrigger=PropertyChanged}" Margin="4,0,0,4"/>
+                <TextBox Text="{Binding Color2, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,4,0"/>
+                <TextBox Text="{Binding Color3, UpdateSourceTrigger=PropertyChanged}" Margin="4,0,0,0"/>
+            </UniformGrid>
+
+            <TextBlock Text="CAMERA" Style="{StaticResource Sec}"/>
+            <c:ParamSlider Label="Orbit yaw" Unit="deg" Minimum="-180" Maximum="180" Value="{Binding Config.Camera.Yaw, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Orbit pitch" Unit="deg" Minimum="-85" Maximum="85" Value="{Binding Config.Camera.Pitch, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Zoom (distance)" Minimum="1" Maximum="40" Value="{Binding Config.Camera.Distance, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Field of view" Unit="deg" Minimum="25" Maximum="110" Value="{Binding Config.Camera.Fov, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Auto-rotate" Unit="deg/s" Minimum="-60" Maximum="60" Value="{Binding Config.Camera.AutoRotateSpeed, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Bass camera kick" Minimum="0" Maximum="1" Value="{Binding Config.Camera.AudioShake, Mode=TwoWay}"/>
+            <c:ParamSlider Label="2D zoom" Unit="x" Minimum="0.4" Maximum="4" Value="{Binding Config.Camera.Zoom2D, Mode=TwoWay}"/>
+            <CheckBox Content="Orthographic projection (3D)" IsChecked="{Binding Config.Camera.Orthographic, Mode=TwoWay}"/>
+
+            <TextBlock Text="BACKGROUND" Style="{StaticResource Sec}"/>
+            <ComboBox ItemsSource="{Binding BackgroundModes}" SelectedItem="{Binding Config.Background.Mode, Mode=TwoWay}"/>
+            <UniformGrid Columns="2" Margin="0,8,0,8">
+                <TextBox Text="{Binding Config.Background.Color1, UpdateSourceTrigger=LostFocus}" Margin="0,0,4,0"/>
+                <TextBox Text="{Binding Config.Background.Color2, UpdateSourceTrigger=LostFocus}" Margin="4,0,0,0"/>
+            </UniformGrid>
+            <WrapPanel Margin="0,0,0,8">
+                <Button Content="Choose picture..." Command="{Binding ChooseBackgroundImageCommand}" Padding="10,5" Margin="0,0,6,0" AutomationProperties.Name="Choose background picture"/>
+                <Button Content="Remove" Command="{Binding RemoveBackgroundImageCommand}" Padding="10,5"/>
+            </WrapPanel>
+            <TextBlock Text="{Binding BackgroundStatus}" Style="{StaticResource Tiny}" TextWrapping="Wrap"/>
+            <c:ParamSlider Label="Picture dimming" Minimum="0" Maximum="1" Value="{Binding Config.Background.ImageDim, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Background animation" Minimum="0" Maximum="2" Value="{Binding Config.Background.AnimationSpeed, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Audio reactive" Minimum="0" Maximum="2" Value="{Binding Config.Background.AudioReactive, Mode=TwoWay}"/>
+
+            <TextBlock Text="EFFECTS" Style="{StaticResource Sec}"/>
+            <CheckBox Content="Bloom / glow" IsChecked="{Binding Config.Effects.Bloom, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Bloom amount" Minimum="0" Maximum="3" Value="{Binding Config.Effects.BloomAmount, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Bloom threshold" Minimum="0.1" Maximum="1" Value="{Binding Config.Effects.BloomThreshold, Mode=TwoWay}"/>
+            <CheckBox Content="Vignette" IsChecked="{Binding Config.Effects.Vignette, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Vignette amount" Minimum="0" Maximum="1" Value="{Binding Config.Effects.VignetteAmount, Mode=TwoWay}"/>
+            <CheckBox Content="Chromatic aberration" IsChecked="{Binding Config.Effects.ChromaticAberration, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Aberration amount" Minimum="0" Maximum="0.05" Value="{Binding Config.Effects.ChromaticAmount, Mode=TwoWay}"/>
+            <CheckBox Content="RGB separation" IsChecked="{Binding Config.Effects.RgbSeparation, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Separation amount" Minimum="0" Maximum="0.02" Value="{Binding Config.Effects.RgbSeparationAmount, Mode=TwoWay}"/>
+            <CheckBox Content="Film grain" IsChecked="{Binding Config.Effects.FilmGrain, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Grain amount" Minimum="0" Maximum="0.4" Value="{Binding Config.Effects.FilmGrainAmount, Mode=TwoWay}"/>
+            <CheckBox Content="Scanlines" IsChecked="{Binding Config.Effects.Scanlines, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Scanline amount" Minimum="0" Maximum="1" Value="{Binding Config.Effects.ScanlineAmount, Mode=TwoWay}"/>
+            <CheckBox Content="Colour grading" IsChecked="{Binding Config.Effects.ColorGrading, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Saturation" Minimum="0" Maximum="2.5" Value="{Binding Config.Effects.Saturation, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Contrast" Minimum="0.5" Maximum="2" Value="{Binding Config.Effects.Contrast, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Brightness" Minimum="-0.5" Maximum="0.5" Value="{Binding Config.Effects.Brightness, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Hue shift" Unit="deg" Minimum="-180" Maximum="180" Value="{Binding Config.Effects.HueShift, Mode=TwoWay}"/>
+            <CheckBox Content="Distortion" IsChecked="{Binding Config.Effects.Distortion, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Distortion amount" Minimum="-0.6" Maximum="0.6" Value="{Binding Config.Effects.DistortionAmount, Mode=TwoWay}"/>
+            <CheckBox Content="Blur" IsChecked="{Binding Config.Effects.Blur, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Blur amount" Minimum="0" Maximum="1" Value="{Binding Config.Effects.BlurAmount, Mode=TwoWay}"/>
+            <CheckBox Content="Noise" IsChecked="{Binding Config.Effects.Noise, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Noise amount" Minimum="0" Maximum="0.4" Value="{Binding Config.Effects.NoiseAmount, Mode=TwoWay}"/>
+            <CheckBox Content="Motion blur" IsChecked="{Binding Config.Effects.MotionBlur, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Motion blur amount" Minimum="0" Maximum="0.95" Value="{Binding Config.Effects.MotionBlurAmount, Mode=TwoWay}"/>
+            <CheckBox Content="Light rays" IsChecked="{Binding Config.Effects.LightRays, Mode=TwoWay}"/>
+            <c:ParamSlider Label="Light ray amount" Minimum="0" Maximum="2" Value="{Binding Config.Effects.LightRaysAmount, Mode=TwoWay}"/>
+            <TextBlock Text="Blur, motion blur and light rays are skipped on Low and Medium quality to protect frame rate." Style="{StaticResource Tiny}" TextWrapping="Wrap"/>
+
+            <TextBlock Text="SCREENSHOT" Style="{StaticResource Sec}"/>
+            <ComboBox ItemsSource="{Binding ScreenshotFormats}" SelectedItem="{Binding SelectedScreenshotFormat}" Margin="0,0,0,6"/>
+            <ComboBox ItemsSource="{Binding ScreenshotSizes}" SelectedItem="{Binding SelectedScreenshotSize}"/>
+            <CheckBox Content="Transparent background (PNG)" IsChecked="{Binding ScreenshotTransparent}" Margin="0,8,0,0"/>
+            <Button Content="Open screenshot folder" Command="{Binding OpenScreenshotsCommand}" HorizontalAlignment="Left" Margin="0,8,0,0"/>
+            <Button Content="Reset all visual settings" Command="{Binding ResetAllCommand}" HorizontalAlignment="Left" Margin="0,16,0,0"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

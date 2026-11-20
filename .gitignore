@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+release/
+*.user
+third_party/ffmpeg/bin/
+publish/
+*.pdb

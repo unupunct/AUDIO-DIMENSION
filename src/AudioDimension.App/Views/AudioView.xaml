@@ -1,0 +1,134 @@
+<UserControl x:Class="AudioDimension.App.Views.AudioView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:c="clr-namespace:AudioDimension.App.Controls">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" Text="Audio Settings" Style="{StaticResource H1}"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,8,0,0">
+            <Grid Margin="0,0,12,16" MaxWidth="1000" HorizontalAlignment="Left">
+                <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="16"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+
+                <!-- Left: source + live monitoring -->
+                <StackPanel>
+                    <TextBlock Text="Source" Style="{StaticResource H2}" Margin="0,10,0,8"/>
+                    <Border Style="{StaticResource Card}"><StackPanel>
+                        <TextBlock Text="Input source" Style="{StaticResource Muted}"/>
+                        <ComboBox ItemsSource="{Binding Sources}" SelectedItem="{Binding SelectedSource}" Margin="0,4,0,10"/>
+                        <TextBlock Text="Device (microphone, or the output device to capture)" Style="{StaticResource Muted}"/>
+                        <ComboBox ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDevice}" Margin="0,4,0,10"/>
+                        <Button Content="Refresh devices" Command="{Binding RefreshDevicesCommand}" HorizontalAlignment="Left"/>
+                        <CheckBox Content="Monitor microphone through an output device" IsChecked="{Binding MonitorEnabled}" Margin="0,14,0,4"/>
+                        <ComboBox ItemsSource="{Binding MonitorDevices}" SelectedItem="{Binding SelectedMonitorDevice}" IsEnabled="{Binding MonitorEnabled}"/>
+                        <TextBlock Text="{Binding MonitorMessage}" Foreground="{StaticResource DangerBrush}" TextWrapping="Wrap" Margin="0,6,0,0"/>
+                        <TextBlock Text="Use headphones when monitoring to avoid feedback." Style="{StaticResource Muted}" FontSize="12" Margin="0,6,0,0"/>
+                    </StackPanel></Border>
+
+                    <Button Content="{Binding StartStopText}" Command="{Binding StartStopCommand}" Style="{StaticResource AccentButton}" Margin="0,14,0,0" Padding="14,10"/>
+                    <Border Margin="0,12,0,0" BorderBrush="{StaticResource DangerBrush}">
+                        <Border.Style>
+                            <Style TargetType="Border" BasedOn="{StaticResource Card}">
+                                <Setter Property="Visibility" Value="Visible"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ErrorMessage}" Value=""><Setter Property="Visibility" Value="Collapsed"/></DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+                        <StackPanel>
+                            <TextBlock Text="{Binding ErrorMessage}" TextWrapping="Wrap" Foreground="{StaticResource DangerBrush}"/>
+                            <Button Content="Open Windows privacy settings" Command="{Binding OpenPrivacySettingsCommand}" HorizontalAlignment="Left" Margin="0,10,0,0">
+                                <Button.Style>
+                                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers><DataTrigger Binding="{Binding ShowPrivacyButton}" Value="True"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Text="Device status" Style="{StaticResource H2}"/>
+                    <Border Style="{StaticResource Card}"><StackPanel>
+                        <TextBlock Text="{Binding DeviceName}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"/>
+                        <TextBlock Text="{Binding DeviceStatus}" Style="{StaticResource Muted}" Margin="0,4,0,0"/>
+                        <TextBlock Text="{Binding DeviceFormat}" Style="{StaticResource Muted}"/>
+                    </StackPanel></Border>
+
+                    <TextBlock Text="Live input" Style="{StaticResource H2}"/>
+                    <Border Style="{StaticResource Card}"><StackPanel>
+                        <DockPanel>
+                            <TextBlock DockPanel.Dock="Right" Text="{Binding RmsText}"/>
+                            <TextBlock Text="Level (RMS)" Style="{StaticResource Muted}"/>
+                        </DockPanel>
+                        <c:LevelMeter Level="{Binding Level}" Peak="{Binding Peak}" Height="14" Margin="0,6,0,8"/>
+                        <DockPanel>
+                            <TextBlock DockPanel.Dock="Right" Text="{Binding PeakText}"/>
+                            <TextBlock Text="Peak hold" Style="{StaticResource Muted}"/>
+                        </DockPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,12,0,0">
+                            <Ellipse Width="12" Height="12" VerticalAlignment="Center">
+                                <Ellipse.Style>
+                                    <Style TargetType="Ellipse">
+                                        <Setter Property="Fill" Value="#444B57"/>
+                                        <Style.Triggers><DataTrigger Binding="{Binding IsActive}" Value="True"><Setter Property="Fill" Value="{StaticResource AccentBrush}"/></DataTrigger></Style.Triggers>
+                                    </Style>
+                                </Ellipse.Style>
+                            </Ellipse>
+                            <TextBlock Text="Audio activity" Margin="8,0,18,0"/>
+                            <Ellipse Width="12" Height="12" VerticalAlignment="Center">
+                                <Ellipse.Style>
+                                    <Style TargetType="Ellipse">
+                                        <Setter Property="Fill" Value="#444B57"/>
+                                        <Style.Triggers><DataTrigger Binding="{Binding Beat}" Value="True"><Setter Property="Fill" Value="#F5C842"/></DataTrigger></Style.Triggers>
+                                    </Style>
+                                </Ellipse.Style>
+                            </Ellipse>
+                            <TextBlock Text="Beat" Margin="8,0,0,0"/>
+                        </StackPanel>
+                    </StackPanel></Border>
+                </StackPanel>
+
+                <!-- Right: analysis controls + spectrum -->
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Spectrum" Style="{StaticResource H2}" Margin="0,10,0,8"/>
+                    <Border Style="{StaticResource Card}"><StackPanel>
+                        <c:SpectrumView Values="{Binding Spectrum}" Height="110"/>
+                        <c:SpectrumView Values="{Binding BandValues}" Height="70" Margin="0,10,0,0"/>
+                        <ItemsControl ItemsSource="{Binding BandNames}" Margin="0,4,0,0">
+                            <ItemsControl.ItemsPanel><ItemsPanelTemplate><UniformGrid Rows="1"/></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate><DataTemplate>
+                                <TextBlock Text="{Binding}" FontSize="10.5" Style="{StaticResource Muted}" HorizontalAlignment="Center"/>
+                            </DataTemplate></ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel></Border>
+
+                    <TextBlock Text="Analysis" Style="{StaticResource H2}"/>
+                    <Border Style="{StaticResource Card}"><StackPanel>
+                        <c:ParamSlider Label="Input gain" Unit="x" Minimum="0" Maximum="4" Value="{Binding Params.InputGain, Mode=TwoWay}"/>
+                        <c:ParamSlider Label="Sensitivity" Unit="x" Minimum="0.1" Maximum="4" Value="{Binding Params.Sensitivity, Mode=TwoWay}"/>
+                        <c:ParamSlider Label="Noise gate" Unit="dB" Minimum="-90" Maximum="-20" Value="{Binding Params.NoiseGateDb, Mode=TwoWay}"/>
+                        <c:ParamSlider Label="Smoothing" Minimum="0" Maximum="0.95" Value="{Binding Params.Smoothing, Mode=TwoWay}"/>
+                        <c:ParamSlider Label="Bass sensitivity" Unit="x" Minimum="0" Maximum="3" Value="{Binding Params.BassSensitivity, Mode=TwoWay}"/>
+                        <c:ParamSlider Label="Midrange sensitivity" Unit="x" Minimum="0" Maximum="3" Value="{Binding Params.MidSensitivity, Mode=TwoWay}"/>
+                        <c:ParamSlider Label="Treble sensitivity" Unit="x" Minimum="0" Maximum="3" Value="{Binding Params.TrebleSensitivity, Mode=TwoWay}"/>
+                        <c:ParamSlider Label="Frequency response tilt (dark - bright)" Minimum="-1" Maximum="1" Value="{Binding Params.FrequencyTilt, Mode=TwoWay}"/>
+                        <CheckBox Content="Automatic gain adjustment" IsChecked="{Binding Params.AutoGain, Mode=TwoWay}"/>
+                        <CheckBox Content="Peak (beat) detection" IsChecked="{Binding Params.PeakDetection, Mode=TwoWay}"/>
+                        <Button Content="Reset analysis controls" Command="{Binding ResetParamsCommand}" HorizontalAlignment="Left" Margin="0,10,0,0"/>
+                    </StackPanel></Border>
+
+                    <TextBlock Text="Frequency bands" Style="{StaticResource H2}"/>
+                    <Border Style="{StaticResource Card}">
+                        <ItemsControl ItemsSource="{Binding Bands}">
+                            <ItemsControl.ItemTemplate><DataTemplate>
+                                <DockPanel>
+                                    <TextBlock DockPanel.Dock="Right" Text="{Binding Range}" Style="{StaticResource Muted}"/>
+                                    <CheckBox Content="{Binding Name}" IsChecked="{Binding IsEnabled, Mode=TwoWay}"/>
+                                </DockPanel>
+                            </DataTemplate></ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

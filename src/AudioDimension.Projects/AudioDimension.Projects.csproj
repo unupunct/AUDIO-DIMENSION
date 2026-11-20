@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\AudioDimension.Core\AudioDimension.Core.csproj" />
+    <ProjectReference Include="..\AudioDimension.Audio\AudioDimension.Audio.csproj" />
+    <ProjectReference Include="..\AudioDimension.Visuals\AudioDimension.Visuals.csproj" />
+    <ProjectReference Include="..\AudioDimension.Presets\AudioDimension.Presets.csproj" />
+    <ProjectReference Include="..\AudioDimension.Recording\AudioDimension.Recording.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
