@@ -4,11 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [1.0.0-preview.1] - 2026-11-20 (installer added the same day)
 
+First public preview. Built in stages; stages 1 to 7 are complete and tested, stages 8 (polish and optimization) and 9 (installer and release verification) are only partly done.
+
 ### Installer
 - Added `AudioDimension_Setup.exe` (Inno Setup 6): per-user install, Start Menu and optional desktop shortcut, uninstaller, bundled runtime and FFmpeg. Uninstall keeps user data unless you ask to delete it, and silent uninstalls never delete it (a test caught an early version that did).
-
-
-First public preview. Built in stages; stages 1 to 7 are complete and tested, stages 8 (polish and optimization) and 9 (installer and release verification) are only partly done.
 
 ### Added
 - **Foundation:** WPF shell with dark theme, SQLite storage, Serilog logging, settings, collapsible inspector, DPI-aware UI scaling.
